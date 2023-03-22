@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Melo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/3e5d0479f9.js" crossorigin="anonymous"></script>
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+        body, html {
+            height: 100%;
+            color: #777;
+            line-height: 1.8;
+        }
+
+        /* Create a Parallax Effect */
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* First image (Logo. Full height) */
+        .bgimg-1 {
+
+            background-image: url('../features/bkg/b1.JPG');
+            min-height: 100%;
+        }
+
+        /* Second image (Portfolio) */
+        .bgimg-2 {
+            background-image: url("../features/bkg/b2.JPG");
+            min-height: 400px;
+        }
+
+        /* Third image (Contact) */
+        .bgimg-3 {
+            background-image: url("../features/bkg/b3.JPG");
+            min-height: 400px;
+        }
+
+        .w3-wide {letter-spacing: 10px;}
+        .w3-hover-opacity {cursor: pointer;}
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1600px) {
+            .bgimg-1, .bgimg-2, .bgimg-3 {
+                background-attachment: scroll;
+                min-height: 400px;
+            }
+        }
+       </style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+            <i class="fa fa-search"></i>
+        </a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+        <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+        <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+        <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Melo's Web <span class="w3-hide-small">WEBSITE</span> </span>
+    </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">ABOUT ME</h3>
+    <p class="w3-center"><em>I am an Akita</em></p>
+    <p>The Japanese Akita, also known as the Akita Inu, is a breed of dog that originated in the Akita prefecture of Japan. This breed is one of the six native Japanese dog breeds, and it is recognized as a national treasure in Japan.
+
+        The Japanese Akita is a large and powerful dog, with males typically weighing between 75 and 120 pounds and standing between 24 and 28 inches tall at the shoulder. Females are usually slightly smaller, weighing between 50 and 110 pounds and standing between 22 and 26 inches tall.</p>
+    <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+            <p><b><i class="fa fa-user w3-margin-right"></i>Melo</b></p><br>
+            <img src="/features/bkg/m1.jpeg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+        </div>
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+            <p>Japanese Akitas have a thick double coat that comes in a variety of colors, including white, red, brindle, and sesame. They have a broad, bear-like head and a sturdy, well-balanced body. They are known for their loyalty and affection towards their family, but can be aloof and reserved towards strangers.
+
+                Training and socialization are important for Japanese Akitas, as they can be strong-willed and independent. They require regular exercise and mental stimulation, and are best suited for experienced dog owners who can provide them with the structure and discipline they need.
+
+                It's worth noting that there are two types of Akita: the Japanese Akita and the American Akita. While they share some similarities, there are also some key differences in their appearance and temperament. The Japanese Akita is generally smaller and more fox-like in appearance, while the American Akita is larger and more bear-like. The Japanese Akita is also generally considered to be more reserved and aloof than the American Akita.
+        </div>
+    </div>
+    <p class="w3-large w3-center w3-padding-16">I'm really good at:</p>
+    <p class="w3-wide"><i class="fa-solid fa-bone"></i>Eating</p>
+
+    <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+    </div>
+    <p class="w3-wide"><i class="fa-solid fa-poo"></i>Popping</p>
+    <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide"><i class="fa-solid fa-moon"></i>Sleeping</p>
+    <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+    </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Owners: Thomas</span>
+    </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55 pounds+</span><br>
+        Weigths
+    </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">10 h+</span><br>
+        Sleeping
+    </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">300 g+</span><br>
+        Daily Food Supply
+    </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">MY Life</h3>
+    <p class="w3-center"><em>Here are some of my latest life photoes<br> <br>Click on the images to make them bigger</em></p><br>
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+            <img src="/features/bkg/s1.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="watch you">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="/features/bkg/s2.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Tired！">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="/features/bkg/s3.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="tuuuuuuu">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="/features/bkg/s3_1.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="LOL">
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+            <img src="/features/bkg/s3_2.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="ohhhh">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="/features/bkg/s3_3.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="oooooo">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="/features/bkg/s4.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="wuwuwuwu">
+        </div>
+
+        <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+    </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+    </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+    <h3 class="w3-center">This is Melo</h3>
+    <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+    <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+            <img src="/features/bkg/s5.jpeg" class="w3-image w3-round" style="width:100%">
+        </div>
+        <div class="w3-col m8 w3-panel">
+            <div class="w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> San Jose, US<br>
+                <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1 408-718-5711<br>
+                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: xthomaswang@gmail.com<br>
+            </div>
+            <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+            <form action="/melo" method="post">
+                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                    <div class="w3-half">
+                        <input class="w3-input w3-border" type="text" placeholder="Name" required name="username" id="username">
+                    </div>
+                </div>
+                <input class="w3-input w3-border" type="text" placeholder="Comment" required name="comment" id="comment" >
+                <button class="w3-button w3-black w3-right w3-section" type="submit">
+                    <i class="fa fa-paper-plane"></i> Comment it!
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<div>
+    <h1>Comments:</h1>
+    <form action="/melo" method="get">
+        <div id="comments"></div>
+        <script>
+            //json file notation
+            const commentsContainer = document.querySelector("#comments");
+            fetch("/melo/cmt.json")
+                .then(response=> response.json())
+                .then(data => {
+                    data.forEach(comment =>{
+                        const commentElement = document.createElement("div");
+                        commentElement.innerHTML = `
+                    <h3>${comment.name}: ${comment.text}</h3>
+                    <h3>-------------------------------------</h3>
+                    `
+                        commentsContainer.appendChild(commentElement)
+                    })
+                })
+        </script>
+    </form>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+
+
+
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
+
+</body>
+</html>
